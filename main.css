@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+  background-color: #0460bc;
+  font-size: 1.7rem;
+  padding: 20rem 0;
+}
+
+.wrapper{
+  background-color: #fff;
+  max-width:400px ;
+  margin: 0 auto;
+  border-radius: 1.1rem;
+  padding:3rem;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 3rem;
+}
+
+.arrow-box{
+  width: 4.2rem;
+  height: 3.8rem;
+  background-color: #e1e9f0;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+}
+
+.arrow-left,
+.arrow-right{
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.month-name{
+  place-self: center;
+  font-size: 2rem;
+}
+
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-items: center;
+  grid-gap: 1.5rem;
+}
+
+.day-name{
+  font-weight: 700;
+}
+
+.day-num{
+  cursor: pointer;
+  padding: 4px;
+}
+
+.day-num:hover{
+background-color: #e1e9f0;
+border-radius: 3px;
+}
+
+.clr-gray{
+  color: #999;
+}
+
+::selection{
+  background-color: #0460bc;
+  color: #fff;
+}
